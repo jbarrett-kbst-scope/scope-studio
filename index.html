@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SCOPE Studio | Kearny Biomedical Science & Technology</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans">
+
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex items-center space-x-3">
+          <div class="bg-brand-700 text-white p-2 rounded-lg font-bold text-xl tracking-wider">
+            SCOPE
+          </div>
+          <div>
+            <span class="block text-base font-bold text-slate-900 leading-tight">SCOPE Studio</span>
+            <span class="block text-xs text-slate-500">Kearny BST • SDUSD</span>
+          </div>
+        </div>
+
+        <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+          <a href="#about" class="hover:text-brand-700 transition">About</a>
+          <a href="#tracks" class="hover:text-brand-700 transition">Program Tracks</a>
+          <a href="#proposals" class="hover:text-brand-700 transition">Student Projects</a>
+          <a href="#roadmap" class="hover:text-brand-700 transition">Roadmap</a>
+          <a href="#board" class="hover:text-brand-700 transition">Advisory Board</a>
+        </nav>
+
+        <div class="hidden md:block">
+          <a href="mailto:jbarrett@sandi.net" class="bg-brand-700 hover:bg-brand-800 text-white text-sm font-semibold px-4 py-2 rounded-lg shadow-sm transition">
+            Contact Advisor
+          </a>
+        </div>
+
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-btn" class="text-slate-600 hover:text-slate-900 focus:outline-none p-2">
+            <i class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-4 space-y-3">
+      <a href="#about" class="mobile-nav-link block text-slate-700 font-medium py-1">About</a>
+      <a href="#tracks" class="mobile-nav-link block text-slate-700 font-medium py-1">Program Tracks</a>
+      <a href="#proposals" class="mobile-nav-link block text-slate-700 font-medium py-1">Student Projects</a>
+      <a href="#roadmap" class="mobile-nav-link block text-slate-700 font-medium py-1">Roadmap</a>
+      <a href="#board" class="mobile-nav-link block text-slate-700 font-medium py-1">Advisory Board</a>
+      <a href="mailto:jbarrett@sandi.net" class="block w-full text-center bg-brand-700 text-white font-semibold py-2 rounded-lg">Contact Advisor</a>
+    </div>
+  </header>
+
+  <section id="about" class="bg-gradient-to-b from-slate-900 to-slate-800 text-white py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+      <div class="grid md:grid-cols-12 gap-8 items-center">
+        <div class="md:col-span-8 space-y-4">
+          <span class="inline-block bg-brand-600/30 text-brand-100 text-xs font-semibold px-3 py-1 rounded-full border border-brand-500/30">
+            Fall 2026 Strategic Implementation
+          </span>
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">
+            Student-Led Collaborative Opportunities for Products & Enterprise
+          </h1>
+          <p class="text-slate-300 text-base md:text-lg max-w-2xl">
+            Empowering high school researchers and engineers at Kearny School of Biomedical Science and Technology to solve real-world problems through scientific publishing, startup enterprise, and client solution builds.
+          </p>
+          <div class="pt-2 flex flex-wrap justify-center md:justify-start gap-4 text-xs sm:text-sm text-slate-300">
+            <div><i class="fa-solid fa-user-doctor text-brand-600 mr-1.5"></i><strong>Advisor:</strong> Dr. Jacob Barrett</div>
+            <div><i class="fa-solid fa-location-dot text-brand-600 mr-1.5"></i>San Diego Unified School District</div>
+          </div>
+        </div>
+        <div class="md:col-span-4 bg-slate-800/80 p-6 rounded-2xl border border-slate-700/60 shadow-xl">
+          <h3 class="text-lg font-bold mb-3 text-brand-100">Contributing Student Authors</h3>
+          <ul class="space-y-2 text-sm text-slate-300">
+            <li class="flex items-center"><i class="fa-solid fa-circle-user text-slate-400 mr-2 text-xs"></i> Sofia Avila</li>
+            <li class="flex items-center"><i class="fa-solid fa-circle-user text-slate-400 mr-2 text-xs"></i> Sammie Luken Jr</li>
+            <li class="flex items-center"><i class="fa-solid fa-circle-user text-slate-400 mr-2 text-xs"></i> Abhav Mital</li>
+            <li class="flex items-center"><i class="fa-solid fa-circle-user text-slate-400 mr-2 text-xs"></i> Anh Truong</li>
+            <li class="flex items-center"><i class="fa-solid fa-circle-user text-slate-400 mr-2 text-xs"></i> Vy Vuong</li>
+            <li class="flex items-center"><i class="fa-solid fa-user-shield text-brand-600 mr-2 text-xs"></i> Dr. Jacob Barrett</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tracks" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Three Pathway Pathways</h2>
+      <p class="text-slate-600 mt-2 text-sm md:text-base">Structured frameworks guiding student STEM research, engineering design, and enterprise creation.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center text-xl mb-4 font-bold">
+            <i class="fa-solid fa-microscope"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Challenge Track</h3>
+          <p class="text-slate-600 text-sm mb-4">Designed for rigorous scientific research, manuscript publication, and competitive STEM entry.</p>
+          <ul class="text-xs text-slate-600 space-y-2 mb-6">
+            <li><strong>Key Deliverable:</strong> Independent research paper, IRB/IACUC regulatory documentation</li>
+            <li><strong>Target Platforms:</strong> Regeneron STS, IJHSR, JEI, NIH Challenge</li>
+          </ul>
+        </div>
+        <span class="inline-block text-center w-full bg-blue-50 text-blue-700 font-semibold text-xs py-2 rounded-lg border border-blue-100">Scholarly Research</span>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 bg-amber-100 text-amber-700 rounded-xl flex items-center justify-center text-xl mb-4 font-bold">
+            <i class="fa-solid fa-rocket"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Founder Track</h3>
+          <p class="text-slate-600 text-sm mb-4">Focuses on hardware startup creation, product design, and commercialization strategies.</p>
+          <ul class="text-xs text-slate-600 space-y-2 mb-6">
+            <li><strong>Key Deliverable:</strong> Engineering documentation & functional physical prototype</li>
+            <li><strong>Target Platform:</strong> Kickstarter Crowdfunding Campaign</li>
+          </ul>
+        </div>
+        <span class="inline-block text-center w-full bg-amber-50 text-amber-700 font-semibold text-xs py-2 rounded-lg border border-amber-100">Entrepreneurship</span>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center text-xl mb-4 font-bold">
+            <i class="fa-solid fa-handshake"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Client Track</h3>
+          <p class="text-slate-600 text-sm mb-4">Tailored for real-world client management, custom engineering solutions, and targeted pitches.</p>
+          <ul class="text-xs text-slate-600 space-y-2 mb-6">
+            <li><strong>Key Deliverable:</strong> Engineering documentation, functional prototype & pitch deck</li>
+            <li><strong>Target Platform:</strong> Live client presentation & functional demo</li>
+          </ul>
+        </div>
+        <span class="inline-block text-center w-full bg-emerald-50 text-emerald-700 font-semibold text-xs py-2 rounded-lg border border-emerald-100">Applied Engineering</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="proposals" class="py-16 bg-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Featured Fall 2026 Projects</h2>
+          <p class="text-slate-600 text-sm mt-1">Current active proposals undergoing design, experimentation, and build phases.</p>
+        </div>
+        <div class="mt-4 md:mt-0 flex flex-wrap gap-2 text-xs font-medium" id="filter-container">
+          <button class="filter-btn active bg-slate-900 text-white px-3 py-1.5 rounded-full" data-filter="all">All Projects</button>
+          <button class="filter-btn bg-white text-slate-700 hover:bg-slate-200 px-3 py-1.5 rounded-full" data-filter="client">Client Track</button>
+          <button class="filter-btn bg-white text-slate-700 hover:bg-slate-200 px-3 py-1.5 rounded-full" data-filter="founder">Founder Track</button>
+          <button class="filter-btn bg-white text-slate-700 hover:bg-slate-200 px-3 py-1.5 rounded-full" data-filter="challenge">Challenge Track</button>
+        </div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-2 gap-6">
+        <div class="proposal-card bg-white p-6 rounded-xl border border-slate-200 shadow-sm" data-category="client">
+          <div class="flex justify-between items-start mb-3">
+            <span class="bg-emerald-100 text-emerald-800 text-xs font-semibold px-2.5 py-1 rounded">Client Track</span>
+            <span class="text-xs text-slate-500">Client: Dr. Barrett</span>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Post-Suture Wound Healing Device</h3>
+          <p class="text-xs text-slate-600 leading-relaxed mb-4">
+            Developing dynamic daytime support bands, a light nocturnal alignment splint, and an advanced liquid bandage formula to maintain tension and support skin healing on high-movement joint areas like hands.
+          </p>
+          <div class="flex flex-wrap gap-1 text-[11px] text-slate-500">
+            <span class="bg-slate-100 px-2 py-0.5 rounded">Biomedical Engineering</span>
+            <span class="bg-slate-100 px-2 py-0.5 rounded">Wound Care</span>
+          </div>
+        </div>
+
+        <div class="proposal-card bg-white p-6 rounded-xl border border-slate-200 shadow-sm" data-category="founder">
+          <div class="flex justify-between items-start mb-3">
+            <span class="bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-1 rounded">Founder Track</span>
+            <span class="text-xs text-slate-500">Crowdfunding Target</span>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Outbreak Education Board Game</h3>
+          <p class="text-xs text-slate-600 leading-relaxed mb-4">
+            An engaging, rule-accessible board game tailored for elementary and middle school students to combat infectious disease misinformation and improve public health literacy.
+          </p>
+          <div class="flex flex-wrap gap-1 text-[11px] text-slate-500">
+            <span class="bg-slate-100 px-2 py-0.5 rounded">Game Design</span>
+            <span class="bg-slate-100 px-2 py-0.5 rounded">Public Health</span>
+          </div>
+        </div>
+
+        <div class="proposal-card bg-white p-6 rounded-xl border border-slate-200 shadow-sm" data-category="challenge">
+          <div class="flex justify-between items-start mb-3">
+            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-1 rounded">Challenge Track</span>
+            <span class="text-xs text-slate-500">Genomics / Survey</span>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Genetic Screening in Vietnamese Populations</h3>
+          <p class="text-xs text-slate-600 leading-relaxed mb-4">
+            Evaluating carrier frequencies for autosomal recessive disorders (Alpha Thalassemia, PKU) across Vietnamese ethnic subgroups, assessing testing barriers in young adults (18–25), and mapping low-cost prenatal screening methods.
+          </p>
+          <div class="flex flex-wrap gap-1 text-[11px] text-slate-500">
+            <span class="bg-slate-100 px-2 py-0.5 rounded">Genomics</span>
+            <span class="bg-slate-100 px-2 py-0.5 rounded">IRB Approved</span>
+          </div>
+        </div>
+
+        <div class="proposal-card bg-white p-6 rounded-xl border border-slate-200 shadow-sm" data-category="challenge">
+          <div class="flex justify-between items-start mb-3">
+            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-1 rounded">Challenge Track</span>
+            <span class="text-xs text-slate-500">Computational Biology</span>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Computational Colorectal Cancer Vulnerability Mapping</h3>
+          <p class="text-xs text-slate-600 leading-relaxed mb-4">
+            Utilizing a modified DAISY pipeline combining TCGA patient tumor data and DepMap CRISPR knockout screens to identify synthetic lethal targets in drug-resistant KRAS and BRAF mutant colorectal cancer lines.
+          </p>
+          <div class="flex flex-wrap gap-1 text-[11px] text-slate-500">
+            <span class="bg-slate-100 px-2 py-0.5 rounded">Bioinformatics</span>
+            <span class="bg-slate-100 px-2 py-0.5 rounded">Oncology</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="roadmap" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Strategic Roadmap (Fall 2026)</h2>
+      <p class="text-slate-600 text-sm mt-1">Operational milestones ensuring rigour, mentor review, and project completion.</p>
+    </div>
+
+    <div class="max-w-4xl mx-auto space-y-6">
+      <div class="flex flex-col sm:flex-row bg-white p-5 rounded-xl border border-slate-200 shadow-sm items-start sm:items-center justify-between gap-4">
+        <div class="flex items-center space-x-4">
+          <div class="bg-slate-100 text-slate-800 font-bold px-3 py-2 rounded-lg text-xs min-w-[100px] text-center">
+            Sept / Oct / Nov
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-sm">Monthly Progress Checks</h4>
+            <p class="text-slate-600 text-xs">Logged student hours, status reports, and feedback routing to mentors.</p>
+          </div>
+        </div>
+        <span class="text-xs font-semibold text-brand-700 bg-brand-50 px-2.5 py-1 rounded">Ongoing</span>
+      </div>
+
+      <div class="flex flex-col sm:flex-row bg-white p-5 rounded-xl border border-slate-200 shadow-sm items-start sm:items-center justify-between gap-4">
+        <div class="flex items-center space-x-4">
+          <div class="bg-slate-900 text-white font-bold px-3 py-2 rounded-lg text-xs min-w-[100px] text-center">
+            Nov 5, 2026
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-sm">Technical Project Completion</h4>
+            <p class="text-slate-600 text-xs">All experiments concluded, working prototypes built, and client solutions finalized.</p>
+          </div>
+        </div>
+        <span class="text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded">Milestone 1</span>
+      </div>
+
+      <div class="flex flex-col sm:flex-row bg-white p-5 rounded-xl border border-slate-200 shadow-sm items-start sm:items-center justify-between gap-4">
+        <div class="flex items-center space-x-4">
+          <div class="bg-slate-900 text-white font-bold px-3 py-2 rounded-lg text-xs min-w-[100px] text-center">
+            Dec 5, 2026
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-sm">Final Student Drafts</h4>
+            <p class="text-slate-600 text-xs">Submission of manuscripts, data visualizations, and executive summaries.</p>
+          </div>
+        </div>
+        <span class="text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded">Milestone 2</span>
+      </div>
+
+      <div class="flex flex-col sm:flex-row bg-white p-5 rounded-xl border border-slate-200 shadow-sm items-start sm:items-center justify-between gap-4">
+        <div class="flex items-center space-x-4">
+          <div class="bg-brand-700 text-white font-bold px-3 py-2 rounded-lg text-xs min-w-[100px] text-center">
+            Dec 10, 2026
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-sm">Final Board Report & Presentations</h4>
+            <p class="text-slate-600 text-xs">Final compiled report delivered to Advisory Board ahead of term presentations.</p>
+          </div>
+        </div>
+        <span class="text-xs font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded">Final Delivery</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="board" class="py-16 bg-brand-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center mb-10">
+        <h2 class="text-2xl md:text-3xl font-bold">Advisory Board Action Items</h2>
+        <p class="text-brand-100 text-sm mt-2">Partner with Kearny BST to guide the next generation of biomedical scientists and engineers.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-brand-800/80 p-6 rounded-xl border border-brand-700">
+          <div class="text-brand-200 text-2xl font-bold mb-2">01</div>
+          <h3 class="font-bold text-lg mb-2">Member Biographies</h3>
+          <p class="text-xs text-brand-100 leading-relaxed">
+            Submit a short professional biography and permission to list your profile on our website as an official Advisory Board member.
+          </p>
+        </div>
+
+        <div class="bg-brand-800/80 p-6 rounded-xl border border-brand-700">
+          <div class="text-brand-200 text-2xl font-bold mb-2">02</div>
+          <h3 class="font-bold text-lg mb-2">Proposal Review</h3>
+          <p class="text-xs text-brand-100 leading-relaxed">
+            Provide technical and strategic feedback on student research methodologies and project feasibility.
+          </p>
+        </div>
+
+        <div class="bg-brand-800/80 p-6 rounded-xl border border-brand-700">
+          <div class="text-brand-200 text-2xl font-bold mb-2">03</div>
+          <h3 class="font-bold text-lg mb-2">Mentors & Referrals</h3>
+          <p class="text-xs text-brand-100 leading-relaxed">
+            Connect students with industry mentors or identify real-world client projects to sponsor.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-12 text-center">
+        <a href="mailto:jbarrett@sandi.net?subject=SCOPE%20Studio%20Advisory%20Board%20Response" class="inline-block bg-white text-brand-900 hover:bg-slate-100 font-bold px-8 py-3 rounded-lg shadow-md transition text-sm">
+          Submit Board Feedback / Contact Advisor
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-slate-900 text-slate-400 py-8 border-t border-slate-800 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div>
+        <p class="font-semibold text-slate-300">Kearny School of Biomedical Science and Technology</p>
+        <p>San Diego Unified School District • 1954 Komet Way, San Diego, CA 92111</p>
+      </div>
+      <div>
+        <p>&copy; Fall 2026 SCOPE Studio. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile Navigation Toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Proposal Filter Functionality
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const proposalCards = document.querySelectorAll('.proposal-card');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Reset button styles
+        filterButtons.forEach(btn => {
+          btn.classList.remove('bg-slate-900', 'text-white');
+          btn.classList.add('bg-white', 'text-slate-700');
+        });
+
+        // Activate clicked button
+        button.classList.remove('bg-white', 'text-slate-700');
+        button.classList.add('bg-slate-900', 'text-white');
+
+        const filter = button.getAttribute('data-filter');
+
+        proposalCards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
